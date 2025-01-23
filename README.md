@@ -37,6 +37,11 @@ npm install express
     npm install cors
     # gia fatto a mano
 ```
+```bash
+    # per database
+    npm mysql2
+    # gia fatto a mano
+```
 
 ```javascript
 // import express in server js
@@ -93,9 +98,11 @@ npm run dev
 mkdir routes
 mkdir middlewares
 mkdir controllers
-mkdir classes
-mkdir models
 
+# create connection file.js
+
+```javascript
+```
 
 # create models data
  cd models

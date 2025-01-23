@@ -7,7 +7,7 @@ import {
   store,
   update,
   destroy,
-} from "../controllers/bookController.js";
+} from "../controllers/moviesController.js";
 //Rotte
 
 // Index - Read all

@@ -4,7 +4,7 @@ import express from "express";
 import errorsHandler from "./middlewares/errorsHandler.js";
 import notFound from "./middlewares/notFound.js";
 import corsPolicy from "./middlewares/corsPolicy.js";
-import booksRouter from "./routes/books.js";
+import moviesRouter from "./routes/movies.js";
 // create a server instance
 const app = express();
 
@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 //other routes
-app.use("/books", booksRouter);
+app.use("/movies", moviesRouter);
 //index = /books lista libri (get) Rtot
 //show = /books/:id singolo libro (get) Rpar
 //store = /books salvo nuovo libro (post) C

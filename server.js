@@ -9,7 +9,7 @@ import moviesRouter from "./routes/movies.js";
 const app = express();
 
 // set costant to port
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.use(express.static("public"));
 
 app.use(corsPolicy);
@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 
 //other routes
-app.use("/movies", moviesRouter);
+app.use("/api/movies", moviesRouter);
 //index = /books lista libri (get) Rtot
 //show = /books/:id singolo libro (get) Rpar
 //store = /books salvo nuovo libro (post) C
@@ -35,6 +35,7 @@ app.use(errorsHandler);
 app.use(notFound);
 
 //server must listen on your host and your port
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}}`);
 });
